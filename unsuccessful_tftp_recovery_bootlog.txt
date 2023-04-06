@@ -1,0 +1,49 @@
+U-Boot 1.1.4 (Jun 26 2018 - 19:41:08)
+
+ap152 - Dragonfly 1.0
+
+DRAM:  128 MB
+Top of RAM usable for U-Boot at: 88000000
+Reserving 375k for U-Boot at: 87fa0000
+Reserving 8256k for malloc() at: 87790000
+Reserving 44 Bytes for Board Info at: 8778ffd4
+Reserving 36 Bytes for Global Data at: 8778ffb0
+Reserving 128k for boot params() at: 8776ffb0
+Stack Pointer at: 8776ff98
+Now running in RAM - U-Boot at: 87fa0000
+Flash Manuf Id 0xef, DeviceId0 0x40, DeviceId1 0x17
+flash size 8MB, sector count = 128
+Flash:  8 MB
+Using default environment
+
+In:    serial
+Out:   serial
+Err:   serial
+Net:   ath_gmac_enet_initialize...
+No valid address in Flash. Using fixed address
+ath_gmac_enet_initialize: reset mask:c02200 
+athr_mgmt_init ::done
+Dragonfly  ----> S17 PHY *
+athrs17_reg_init: complete
+SGMII in forced mode
+athr_gmac_sgmii_setup SGMII done
+: cfg1 0x80000000 cfg2 0x7114
+eth0: 00:03:7f:09:0b:ad
+eth0 up
+eth0
+Setting 0x181162c0 to 0x60c02100
+run command setenv serverip 192.168.0.66;setenv ipaddr 192.168.0.86
+run command tftp 0x80060000 ArcherC6v2_tp_recovery.bin
+Trying eth0
+eth0 link down
+FAIL
+Using eth0 device
+TFTP from server 192.168.0.66; our IP address is 192.168.0.86
+Filename 'ArcherC6v2_tp_recovery.bin'.
+Load address: 0x80060000
+Loading: * * Tx Timed out
+T Tx Timed out
+T Tx Timed out
+Tftp server tranfer fail!
+tftpboot firmware failed, now start normally.
+Hit any key to stop autoboot:  1 0
